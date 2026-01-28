@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUXY - Welcome</title>
+    <title>YUXY - Home</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12,16 +12,21 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: space-between; /* Spazia il contenuto tra top e bottom */
+            min-height: 100vh;
             margin: 0;
             text-align: center;
         }
-        .container {
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             letter-spacing: -1px;
             margin-bottom: 10px;
             background: linear-gradient(90deg, #38bdf8, #818cf8);
@@ -30,30 +35,53 @@
         }
         p {
             color: #94a3b8;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
+            max-width: 500px;
         }
         .btn {
             background: #38bdf8;
             color: #0f172a;
-            padding: 12px 24px;
+            padding: 14px 28px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            transition: opacity 0.2s;
+            transition: transform 0.2s, opacity 0.2s;
         }
         .btn:hover {
             opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        footer {
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #64748b;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #38bdf8;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <!-- Contenuto Centrale -->
+    <div class="main-content">
         <h1>YUXY</h1>
-        <p>Il futuro della tua esperienza digitale è qui.</p>
+        <p>Il futuro della tua esperienza digitale è qui. Semplice, veloce, innovativo.</p>
         <a href="#" class="btn">Inizia Ora</a>
     </div>
+
+    <!-- Footer con Link Legali -->
+    <footer>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Termini del Servizio</a>
+        <p style="font-size: 0.7rem; color: #475569; margin-top: 10px;">&copy; 2026 YUXY. Tutti i diritti riservati.</p>
+    </footer>
 
 </body>
 </html>
