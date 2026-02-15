@@ -3,31 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - YUXY</title>
+    <title>Privacy Policy - Yuxy</title>
+    <meta name="description" content="Informativa sulla privacy di Yuxy - Come raccogliamo e proteggiamo i tuoi dati personali.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background: #f8fafc; }
-        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #0f172a; border-bottom: 2px solid #38bdf8; padding-bottom: 10px; }
-        h2 { color: #1e293b; margin-top: 25px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-weight: bold; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background: #f8fafc;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e1b4b, #4338ca);
+            padding: 80px 24px 50px;
+            text-align: center;
+        }
+        .header a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 16px; transition: color 0.2s; }
+        .header a:hover { color: white; }
+        .header h1 { color: white; font-size: 2.5rem; font-weight: 800; margin-bottom: 8px; }
+        .header p { color: rgba(255,255,255,0.6); font-size: 0.95rem; }
+        .content { max-width: 800px; margin: -20px auto 60px; padding: 48px 40px; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: relative; z-index: 1; }
+        h2 { color: #1e293b; font-size: 1.3rem; font-weight: 700; margin: 32px 0 12px; padding-top: 16px; border-top: 1px solid #f1f5f9; }
+        h2:first-of-type { border-top: none; margin-top: 24px; }
+        p, li { margin-bottom: 12px; font-size: 0.95rem; }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        strong { color: #1e293b; }
+        .footer-legal { text-align: center; padding: 30px 24px; font-size: 0.85rem; color: #94a3b8; }
+        .footer-legal a { color: #6366f1; text-decoration: none; }
+        @media (max-width: 640px) {
+            .header { padding: 60px 20px 40px; }
+            .header h1 { font-size: 1.8rem; }
+            .content { margin: -16px 16px 40px; padding: 32px 24px; }
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-link">← Torna alla Home</a>
-    <div class="card">
+    <div class="header">
+        <a href="index.html">&larr; Torna alla Home</a>
         <h1>Informativa sulla Privacy</h1>
-        <p>Ultimo aggiornamento: Gennaio 2026</p>
-        
-        <p>Benvenuto su <strong>YUXY</strong>. La tua privacy è fondamentale per noi. Questa informativa spiega come raccogliamo e proteggiamo i tuoi dati in conformità con il GDPR.</p>
+        <p>Ultimo aggiornamento: Febbraio 2026</p>
+    </div>
+
+    <div class="content">
+        <p>Benvenuto su <strong>Yuxy</strong>. La tua privacy &egrave; fondamentale per noi. Questa informativa spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformit&agrave; con il Regolamento Generale sulla Protezione dei Dati (GDPR - Regolamento UE 2016/679).</p>
 
         <h2>1. Titolare del Trattamento</h2>
-        <p>Il titolare del trattamento dei dati è: <strong>[Inserire Nome Società/Proprietario]</strong>, con sede in [Inserire Indirizzo], email: [Inserire Email di Contatto].</p>
+        <p>Il titolare del trattamento dei dati &egrave;: <strong>Yuxy</strong>, con sede in Italia. Per qualsiasi comunicazione relativa alla privacy puoi contattarci all'indirizzo email: <strong>supporto@appsempreutili.it</strong></p>
 
         <h2>2. Dati Raccolti</h2>
-        <p>Potremmo raccogliere dati personali quali: nome, indirizzo email e dati di utilizzo dell'app per migliorare il servizio.</p>
+        <p>Raccogliamo le seguenti categorie di dati personali:</p>
+        <ul>
+            <li><strong>Dati di registrazione</strong>: nome, cognome, indirizzo email, data di nascita, genere</li>
+            <li><strong>Dati del profilo</strong>: foto del profilo, interessi e attivit&agrave; preferite</li>
+            <li><strong>Dati di posizione</strong>: posizione geografica approssimativa (per la ricerca di persone nelle vicinanze)</li>
+            <li><strong>Dati di comunicazione</strong>: messaggi scambiati nella chat (crittografati end-to-end)</li>
+            <li><strong>Dati tecnici</strong>: indirizzo IP, tipo di dispositivo, sistema operativo, dati di navigazione</li>
+            <li><strong>Dati di pagamento</strong>: gestiti direttamente da Stripe; non memorizziamo i dati della carta di credito</li>
+        </ul>
 
-        <h2>3. I Tuoi Diritti</h2>
-        <p>Ai sensi del GDPR, hai il diritto di accedere ai tuoi dati, chiederne la rettifica o la cancellazione ("diritto all'oblio") inviando una richiesta alla nostra email di contatto.</p>
+        <h2>3. Finalit&agrave; del Trattamento</h2>
+        <p>I tuoi dati vengono trattati per le seguenti finalit&agrave;:</p>
+        <ul>
+            <li>Creazione e gestione del tuo account</li>
+            <li>Ricerca di persone con interessi simili nelle vicinanze</li>
+            <li>Funzionamento della chat e delle notifiche</li>
+            <li>Organizzazione e partecipazione a eventi di gruppo</li>
+            <li>Gestione dei pagamenti per i servizi premium</li>
+            <li>Sicurezza della piattaforma e prevenzione abusi</li>
+            <li>Miglioramento del servizio e analisi statistiche anonime</li>
+        </ul>
+
+        <h2>4. Base Giuridica</h2>
+        <p>Il trattamento dei tuoi dati si basa su:</p>
+        <ul>
+            <li><strong>Esecuzione del contratto</strong>: necessario per fornirti il servizio (Art. 6.1.b GDPR)</li>
+            <li><strong>Consenso</strong>: per la geolocalizzazione e le notifiche push (Art. 6.1.a GDPR)</li>
+            <li><strong>Legittimo interesse</strong>: per la sicurezza della piattaforma (Art. 6.1.f GDPR)</li>
+        </ul>
+
+        <h2>5. Conservazione dei Dati</h2>
+        <p>I tuoi dati personali vengono conservati per il tempo necessario a fornirti il servizio. In caso di cancellazione dell'account, i tuoi dati verranno eliminati entro 30 giorni, salvo obblighi di legge che ne richiedano una conservazione pi&ugrave; lunga.</p>
+
+        <h2>6. Condivisione dei Dati</h2>
+        <p>Non vendiamo i tuoi dati a terze parti. I dati possono essere condivisi con:</p>
+        <ul>
+            <li><strong>Stripe</strong>: per l'elaborazione dei pagamenti</li>
+            <li><strong>Cloudflare</strong>: per l'archiviazione sicura delle foto</li>
+            <li><strong>Firebase (Google)</strong>: per le notifiche push</li>
+        </ul>
+        <p>Tutti i fornitori terzi operano in conformit&agrave; con il GDPR.</p>
+
+        <h2>7. I Tuoi Diritti</h2>
+        <p>Ai sensi del GDPR, hai i seguenti diritti:</p>
+        <ul>
+            <li><strong>Accesso</strong>: puoi richiedere una copia dei tuoi dati personali</li>
+            <li><strong>Rettifica</strong>: puoi correggere i dati inesatti</li>
+            <li><strong>Cancellazione</strong>: puoi richiedere la cancellazione dei tuoi dati ("diritto all'oblio")</li>
+            <li><strong>Portabilit&agrave;</strong>: puoi richiedere i tuoi dati in formato leggibile</li>
+            <li><strong>Opposizione</strong>: puoi opporti al trattamento in determinate circostanze</li>
+            <li><strong>Revoca del consenso</strong>: puoi revocare il consenso in qualsiasi momento</li>
+        </ul>
+        <p>Per esercitare i tuoi diritti, scrivi a: <strong>supporto@appsempreutili.it</strong></p>
+
+        <h2>8. Sicurezza</h2>
+        <p>Adottiamo misure tecniche e organizzative adeguate per proteggere i tuoi dati, tra cui crittografia end-to-end per i messaggi, connessioni HTTPS, archiviazione sicura delle credenziali e controlli di accesso.</p>
+
+        <h2>9. Cookie</h2>
+        <p>Yuxy utilizza cookie tecnici strettamente necessari al funzionamento del servizio (autenticazione, sessione). Non utilizziamo cookie di profilazione o di terze parti per finalit&agrave; pubblicitarie.</p>
+
+        <h2>10. Modifiche alla Privacy Policy</h2>
+        <p>Ci riserviamo il diritto di aggiornare questa informativa. In caso di modifiche sostanziali, ti informeremo tramite notifica nell'app. Ti invitiamo a consultare periodicamente questa pagina.</p>
+
+        <h2>11. Contatti</h2>
+        <p>Per qualsiasi domanda o richiesta relativa alla privacy dei tuoi dati, puoi contattarci all'indirizzo: <strong>supporto@appsempreutili.it</strong></p>
+    </div>
+
+    <div class="footer-legal">
+        <a href="index.html">Yuxy</a> &middot; <a href="terms.html">Termini di Servizio</a> &middot; &copy; 2026 Tutti i diritti riservati.
     </div>
 </body>
 </html>
